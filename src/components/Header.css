@@ -1,0 +1,17 @@
+.header {
+  background-color: #FD9255;
+  padding: 25px 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--nav {
+  color: white;
+}
+
+.header--nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
