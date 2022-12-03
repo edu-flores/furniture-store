@@ -11,15 +11,17 @@ function Calculator() {
 
   return (
     <section className='calculator'>
-      {items.map(item => (
-        <div className='calculator--container'>
+      {items.map((item, index) => (
+        <div className='calculator--container' key={item.id}>
           <Item
-            key={item.id}
             image={require(`../images/${item.image}`)} 
             name={item.name}
-            quantity={item.quantity}
-            />
-          <Controller />
+          />
+          <Controller
+            i={index}
+            data={items}
+            setter={setItems}
+          />
         </div>
       ))}
     </section>

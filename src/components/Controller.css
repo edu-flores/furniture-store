@@ -13,6 +13,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 0;
   width: 25%;
+  cursor: pointer;
 }
 
 .controller--right {
@@ -25,6 +26,7 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 5px;
   width: 25%;
+  cursor: pointer;
 }
 
 .controller--input {
