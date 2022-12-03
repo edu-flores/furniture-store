@@ -1,0 +1,17 @@
+.summary {
+  background-color: #F9F9F9;
+  width: 240px;
+  margin: auto;
+  padding: 10px 40px;
+  text-align: start;
+  display: flex;
+  font-size: small;
+}
+
+.summary--vars {
+  margin-right: auto;
+}
+
+.summary p {
+  margin: 25px 0;
+}

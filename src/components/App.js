@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Calculator from './Calculator';
+import Summary from './Summary';
 import Footer from './Footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         </p>
         <Calculator />
         <h2 className="main--summary">Summary</h2>
+        <Summary />
       </main>
       <Footer />
     </div>
