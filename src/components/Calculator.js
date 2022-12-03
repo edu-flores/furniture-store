@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Calculator.css';
 import data from '../data.json';
 import Item from './Item';
+import Controller from './Controller';
 
 function Calculator() {
 
@@ -11,12 +12,15 @@ function Calculator() {
   return (
     <section className='calculator'>
       {items.map(item => (
-        <Item
-          key={item.id}
-          image={require(`../images/${item.image}`)} 
-          name={item.name}
-          quantity={item.quantity}
-        />
+        <div className='calculator--container'>
+          <Item
+            key={item.id}
+            image={require(`../images/${item.image}`)} 
+            name={item.name}
+            quantity={item.quantity}
+            />
+          <Controller />
+        </div>
       ))}
     </section>
   );

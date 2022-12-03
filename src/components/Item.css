@@ -1,8 +1,6 @@
 .item {
   box-shadow: 1px 1px 80px -20px rgba(200, 200, 200, 1);
-  width: 150px;
   height: 150px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,4 +9,8 @@
 
 .item--image {
   width: 50px;
+}
+
+.item--text {
+  margin: 10px 0 0 0;
 }

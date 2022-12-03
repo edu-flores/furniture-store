@@ -4,7 +4,7 @@ function Item(props) {
   return(
     <div className='item'>
       <img className='item--image' src={props.image} alt={props.name} />
-      <p>{props.name}</p>
+      <p className='item--text'>{props.name}</p>
     </div>
   );
 }
