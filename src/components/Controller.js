@@ -21,6 +21,7 @@ function Controller(props) {
       }
     } else {  // Input
       let { value } = e.target;
+      value = (!value) ? 0 : value;
       value = (value < 0) ? 0 : value;
       value = (value > 50) ? 50 : value;
       temp[index].quantity = value;
