@@ -56,10 +56,9 @@ function App() {
       }
     } else {  // Input
       let { value } = e.target;
-      value = (!value) ? 0 : value;
-      value = (value < 0) ? 0 : value;
+      value = (!value || value < 0) ? 0 : value;
       value = (value > 50) ? 50 : value;
-      temp[index].quantity = value;
+      temp[index].quantity = parseInt(value);
     }
 
     setItems(temp);
@@ -82,7 +81,6 @@ function App() {
         <h2 className="main--summary">Summary</h2>
         <Summary 
           results={results}
-          updateSummary={updateSummary} 
         />
       </main>
       <Footer />
