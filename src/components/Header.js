@@ -3,9 +3,9 @@ import Logo from '../images/Logo.svg';
 
 function Header() {
   return (
-    <header className='header'>
-      <img src={Logo} alt='Logo' />
-      <nav className='header--nav'>
+    <header className="header">
+      <img src={Logo} alt="Logo" />
+      <nav className="header--nav">
         <ul>
           <li>How We Work</li>
           <li>Services</li>
