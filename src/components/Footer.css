@@ -37,6 +37,7 @@ i + i {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 
 .footer--button > span {

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Beds",
+    "image": "Beds.svg",
+    "quantity": 0,
+    "space": 1.2
+  },
+  {
+    "id": 2,
+    "name": "Fridges",
+    "image": "Fridge.svg",
+    "quantity": 0,
+    "space": 1
+  },
+  {
+    "id": 3,
+    "name": "Furniture",
+    "image": "Furniture.svg",
+    "quantity": 0,
+    "space": 0.5
+  },
+  {
+    "id": 4,
+    "name": "Oven",
+    "image": "Oven.svg",
+    "quantity": 0,
+    "space": 0.6
+  },
+  {
+    "id": 5,
+    "name": "Sofa",
+    "image": "Sofa.svg",
+    "quantity": 0,
+    "space": 1.5
+  },
+  {
+    "id": 6,
+    "name": "TV",
+    "image": "TV.svg",
+    "quantity": 0,
+    "space": 0.25
+  },
+  {
+    "id": 7,
+    "name": "Washer-dryer",
+    "image": "Washer.svg",
+    "quantity": 0,
+    "space": 0.5
+  },
+  {
+    "id": 8,
+    "name": "Dining",
+    "image": "Dining.svg",
+    "quantity": 0,
+    "space": 2
+  },
+  {
+    "id": 9,
+    "name": "Desk",
+    "image": "Desk.svg",
+    "quantity": 0,
+    "space": 0.75
+  },
+  {
+    "id": 10,
+    "name": "Wardrobe",
+    "image": "Wardrobe.svg",
+    "quantity": 0,
+    "space": 3.2
+  }
+]
