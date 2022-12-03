@@ -1,23 +1,11 @@
-import { useState } from 'react';
 import './Calculator.css';
-import data from '../data.json';
 import Item from './Item';
 import Controller from './Controller';
 
-function Calculator() {
+function Calculator(props) {
 
   // Get items from JSON
-  const [items, setItems] = useState(data);
-
-  function clearInputs() {
-    let temp = [...items];
-
-    temp.forEach(item => {
-      item.quantity = 0;
-    });
-
-    setItems(temp);
-  }
+  const { items, changeQuantity, clearInputs } = props;
 
   return (
     <section className="calculator">
@@ -28,9 +16,9 @@ function Calculator() {
             name={item.name}
           />
           <Controller
-            i={index}
-            data={items}
-            setter={setItems}
+            index={index}
+            items={items}
+            changeQuantity={changeQuantity}
           />
         </div>
       ))}

@@ -2,7 +2,8 @@ import './Summary.css';
 
 function Summary(props) {
 
-  const { data } = props;
+  // Summary results
+  const { results } = props;
 
   return (
     <div className="summary">
@@ -15,12 +16,12 @@ function Summary(props) {
         <p><b>Due Today 50%</b></p>
       </div>
       <div className="summary--results">
-        <p>{data.items}</p>
-        <p>{data.space}</p>
-        <p>{data.subtotal}</p>
-        <p>${data.tax}</p>
-        <p><b>${data.total}</b></p>
-        <p><b>${data.due}</b></p>
+        <p>{results.items}</p>
+        <p>{results.space}</p>
+        <p>{results.subtotal}</p>
+        <p>${results.tax}</p>
+        <p><b>${results.total}</b></p>
+        <p><b>${results.due}</b></p>
       </div>
     </div>
   );
