@@ -20,9 +20,9 @@ function Calculator() {
   }
 
   return (
-    <section className='calculator'>
+    <section className="calculator">
       {items.map((item, index) => (
-        <div className='calculator--container' key={item.id}>
+        <div className="calculator--container" key={item.id}>
           <Item
             image={require(`../images/${item.image}`)} 
             name={item.name}
@@ -34,7 +34,7 @@ function Calculator() {
           />
         </div>
       ))}
-      <button className='calculator--clear' type='button' onClick={clearInputs}>Clear</button>
+      <button className="calculator--clear" type="button" onClick={clearInputs}>Clear</button>
     </section>
   );
 }

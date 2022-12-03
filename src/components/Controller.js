@@ -31,16 +31,16 @@ function Controller(props) {
   }
 
   return (
-    <div className='controller'>
-      <button data-value='decrease' onClick={changeQuantity} className='controller--left' type='button'>-</button>
+    <div className="controller">
+      <button data-value="decrease" onClick={changeQuantity} className="controller--left" type="button">-</button>
       <input
-        className='controller--input'
-        type='number'
+        className="controller--input"
+        type="number"
         onChange={changeQuantity}
-        name='quantity'
+        name="quantity"
         value={items[index].quantity}
       />
-      <button data-value='increase' onClick={changeQuantity} className='controller--right' type='button'>+</button>
+      <button data-value="increase" onClick={changeQuantity} className="controller--right" type="button">+</button>
     </div>
   );
 }
