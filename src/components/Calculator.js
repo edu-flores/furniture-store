@@ -9,6 +9,16 @@ function Calculator() {
   // Get items from JSON
   const [items, setItems] = useState(data);
 
+  function clearInputs() {
+    let temp = [...items];
+
+    temp.forEach(item => {
+      item.quantity = 0;
+    });
+
+    setItems(temp);
+  }
+
   return (
     <section className='calculator'>
       {items.map((item, index) => (
@@ -24,6 +34,7 @@ function Calculator() {
           />
         </div>
       ))}
+      <button className='calculator--clear' type='button' onClick={clearInputs}>Clear</button>
     </section>
   );
 }
