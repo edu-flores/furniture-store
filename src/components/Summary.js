@@ -9,7 +9,7 @@ function Summary(props) {
     <div className="summary">
       <div className="summary--vars">
         <p>Total Items</p>
-        <p>Total M&#178;</p>
+        <p>Total m&#178;</p>
         <p>Subtotal</p>
         <p>Tax</p>
         <p><b>Total</b></p>
@@ -17,11 +17,11 @@ function Summary(props) {
       </div>
       <div className="summary--results">
         <p>{results.items}</p>
-        <p>{results.space}</p>
-        <p>{results.subtotal}</p>
-        <p>${results.tax}</p>
-        <p><b>${results.total}</b></p>
-        <p><b>${results.due}</b></p>
+        <p>{Number((results.space).toFixed(2)).toLocaleString()}</p>
+        <p>${Number((results.subtotal).toFixed(2)).toLocaleString()}</p>
+        <p>${Number((results.tax).toFixed(2)).toLocaleString()}</p>
+        <p><b>${Number((results.total).toFixed(2)).toLocaleString()}</b></p>
+        <p><b>${Number((results.due).toFixed(2)).toLocaleString()}</b></p>
       </div>
     </div>
   );

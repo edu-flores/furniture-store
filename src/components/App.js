@@ -21,11 +21,22 @@ function App() {
   const [items, setItems] = useState(data);
 
   function updateSummary() {
-    // let _items, _space, _sub, _tax, _total, _due;
 
+    // Total items
     results.items = items.reduce((a, b) => {
       return a + b.quantity;
     }, 0);
+
+    // Total M^2
+    results.space = items.reduce((a, b) => {
+      return a + b.quantity * b.space;
+    }, 0);
+
+    // Subtotal, tax, total, 50%
+    results.subtotal = results.space * 200;
+    results.tax = results.subtotal * 0.16;
+    results.total = results.subtotal + results.tax;
+    results.due = results.total * 0.5;
     
     setResults(results);
   }
