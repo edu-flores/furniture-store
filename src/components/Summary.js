@@ -5,6 +5,9 @@ function Summary(props) {
   // Summary results
   const { results } = props;
 
+  // Add comma and two decimals
+  const formatNumber = num => Number((num).toFixed(2)).toLocaleString();
+
   return (
     <div className="summary">
       <div className="summary--vars">
@@ -17,11 +20,11 @@ function Summary(props) {
       </div>
       <div className="summary--results">
         <p>{results.items}</p>
-        <p>{Number((results.space).toFixed(2)).toLocaleString()}</p>
-        <p>${Number((results.subtotal).toFixed(2)).toLocaleString()}</p>
-        <p>${Number((results.tax).toFixed(2)).toLocaleString()}</p>
-        <p><b>${Number((results.total).toFixed(2)).toLocaleString()}</b></p>
-        <p><b>${Number((results.due).toFixed(2)).toLocaleString()}</b></p>
+        <p>{formatNumber(results.space)}</p>
+        <p>${formatNumber(results.subtotal)}</p>
+        <p>${formatNumber(results.tax)}</p>
+        <p><b>${formatNumber(results.total)}</b></p>
+        <p><b>${formatNumber(results.due)}</b></p>
       </div>
     </div>
   );
