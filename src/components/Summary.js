@@ -1,6 +1,9 @@
 import './Summary.css';
 
-function Summary() {
+function Summary(props) {
+
+  const { data } = props;
+
   return (
     <div className="summary">
       <div className="summary--vars">
@@ -12,12 +15,12 @@ function Summary() {
         <p><b>Due Today 50%</b></p>
       </div>
       <div className="summary--results">
-        <p>12</p>
-        <p>8.55</p>
-        <p>$1710</p>
-        <p>$273.5</p>
-        <p><b>$1,323</b></p>
-        <p><b>$991.8</b></p>
+        <p>{data.items}</p>
+        <p>{data.space}</p>
+        <p>{data.subtotal}</p>
+        <p>${data.tax}</p>
+        <p><b>${data.total}</b></p>
+        <p><b>${data.due}</b></p>
       </div>
     </div>
   );

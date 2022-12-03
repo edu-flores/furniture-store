@@ -3,8 +3,21 @@ import Header from './Header';
 import Calculator from './Calculator';
 import Summary from './Summary';
 import Footer from './Footer';
+import { useState } from 'react';
 
 function App() {
+
+  // Results data
+  const arr = {
+    'items': 0,
+    'space': 0,
+    'subtotal': 0,
+    'tax': 0,
+    'total': 0,
+    'due': 0
+  };
+  const [results, setResults] = useState(arr);
+
   return (
     <div className="app">
       <Header />
@@ -15,7 +28,7 @@ function App() {
         </p>
         <Calculator />
         <h2 className="main--summary">Summary</h2>
-        <Summary />
+        <Summary data={results} setter={setResults} />
       </main>
       <Footer />
     </div>
