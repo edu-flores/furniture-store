@@ -15,6 +15,10 @@ i + i {
   margin-left: 8px;
 }
 
+.footer--top {
+  height: 90px;
+}
+
 .footer--column > h3 {
   font-weight: 100 !important;
 }
@@ -25,13 +29,13 @@ i + i {
 }
 
 .footer--list > li {
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 .footer--button {
   border: 3px solid white;
   border-radius: 3px;
-  padding: 10px 25px;
+  padding: 6px 35px;
   background-color: transparent;
   color: white;
   display: flex;

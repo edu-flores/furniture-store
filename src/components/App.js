@@ -89,7 +89,7 @@ function App() {
           changeQuantity={changeQuantity}
           clearInputs={clearInputs}
         />
-        <h2 className="main--summary">Summary</h2>
+        <h2 className="main--summary text-2xl mb-10">Summary</h2>
         <Summary 
           results={results}
         />
