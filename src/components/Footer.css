@@ -15,6 +15,10 @@ i + i {
   margin-left: 8px;
 }
 
+.footer--top {
+  height: 90px;
+}
+
 .footer--column > h3 {
   font-weight: 100 !important;
 }
