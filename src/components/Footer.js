@@ -3,7 +3,7 @@ import Logo from '../images/Logo.svg';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-10">
       <div className="footer--column">
         <img src={Logo} alt="Logo" />
         <p>
